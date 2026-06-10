@@ -1,5 +1,5 @@
 import './App.css'
-
+import fotoPedro from './img/Fotopedroself.jpeg'
 function App() {
   return (
     <div className="container">
@@ -8,7 +8,7 @@ function App() {
         <section className="hero">
           <div className="profile-image">
             <img
-              src="./img/Fotopedroself.jpeg"
+              src={fotoPedro}
               alt="Pedro Coelho"
             />
           </div>
