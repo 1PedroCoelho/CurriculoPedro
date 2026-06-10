@@ -6,116 +6,158 @@
 
 body {
   background: #f8fafc;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
   color: #0f172a;
 }
 
 .container {
   display: flex;
   justify-content: center;
-  padding: 40px 20px;
+  padding: 30px 15px;
 }
 
 .content {
   width: 100%;
-  max-width: 950px;
+  max-width: 850px;
 }
 
 .hero {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
-.profile-image img {
-  width: 180px;
-  height: 180px;
+.profile-image {
+  width: 170px;
+  height: 170px;
   border-radius: 50%;
-  border: 5px solid #2563eb;
   object-fit: cover;
+  border: 5px solid #2563eb;
   margin-bottom: 20px;
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.2);
 }
 
 .hero h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 10px;
-  color: black;
+  color: #0f172a;
 }
 
 .hero h2 {
   color: #2563eb;
-  font-size: 1.2rem;
-  font-weight: 500;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
-.quote {
-  font-size: 1.1rem;
+.subtitle {
   color: #64748b;
-  font-style: italic;
+  margin-bottom: 8px;
+}
+
+.location {
+  color: #64748b;
 }
 
 .card {
   background: white;
-  padding: 30px;
-  margin-bottom: 25px;
-  border-radius: 16px;
+  padding: 25px;
+  margin-bottom: 20px;
+  border-radius: 18px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
 }
 
 .card h3 {
   color: #2563eb;
   margin-bottom: 20px;
-  font-size: 1.5rem;
+  text-align: center;
 }
 
-.card p {
+.card h4 {
+  margin-bottom: 10px;
+}
+
+.card p,
+.card li {
   line-height: 1.8;
-  margin-bottom: 12px;
+}
+
+.card ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.contact-card {
+  background: #2563eb;
+  color: white;
+  text-decoration: none;
+  border-radius: 14px;
+  padding: 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.contact-card:hover {
+  transform: translateY(-3px);
+}
+
+.contact-card svg {
+  font-size: 1.2rem;
 }
 
 .skills {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 10px;
 }
 
 .skills span {
   background: #2563eb;
   color: white;
-  padding: 10px 16px;
+  padding: 10px 14px;
   border-radius: 999px;
   font-size: 0.9rem;
 }
 
 .interests {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  row-gap: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
-.contact {
+.interests span {
+  background: #eff6ff;
+  padding: 10px 14px;
+  border-radius: 999px;
+}
+
+.quote-section {
   text-align: center;
+  margin: 30px 0;
 }
 
-.contact a {
-  display: inline-block;
-  margin: 10px;
-  color: #2563eb;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.contact a:hover {
-  text-decoration: underline;
+.quote-section p {
+  font-style: italic;
+  color: #64748b;
+  font-size: 1.1rem;
 }
 
 @media (max-width: 768px) {
   .hero h1 {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 
-  .hero h2 {
-    font-size: 1rem;
+  .contact-grid {
+    grid-template-columns: 1fr;
   }
 
   .card {
